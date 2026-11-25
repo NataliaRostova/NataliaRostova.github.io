@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-032 / Excel 业务台账与教学提分追踪系统
+EXCEL LEDGER & TRACKING
+
+所属模块：Excel 建模与交付
+项目周期：2025.04 – 至今
+核心技术：Excel 函数建模 · 数据透视表
+档案状态：OPERATIONS 08 / 08
+核心指标：200+ 课时实战 | 函数建模 | 数据透视表 | 自动化业务台账
+
+在累计交付超 200 课时初高中数理英 1 对 1 教学实践期间，独立运用 Excel 函数建模与数据透视表搭建学员排课、课时核销、考勤统计与阶段性成绩提分追踪台账，体现扎实的数据台账管理与业务落地能力。
+
+核心成果与研究记录
+1. 熟练运用 XLOOKUP/INDEX-MATCH、SUMIFS、动态条件格式与数据透视表自动汇总月度课时与收入核销。
+2. 通过阶段性错题分布与成绩曲线量化每位学员薄弱知识点，将教学反馈转化为可追踪的数据闭环。
+3. 该台账思维可直接迁移至券商/银行日常业务报表自动化、客户持仓台账与风控日报维护。
+
+项目仓库：https://github.com/NataliaRostova
+个人主页：https://github.com/NataliaRostova

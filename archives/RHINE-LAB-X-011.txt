@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-011 / 主力合约换月移仓与流动性评分
+ROLLOVER & LIQUIDITY
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：src/spread_liquidity_monitor.py
+档案状态：MODULE 03 / 08
+核心指标：移仓日 2026-10-26 | OI 占比 80.8% | Amihud 监控 | 成交量比追踪
+
+通过持仓量份额（OI_2701 / Total_OI）、成交量比值（Vol_2701 / Vol_2612）与 Amihud 非流动性代理指标（|Return| / 亿元成交额），量化有色金属近月临近交割期的流动性衰减，科学触发主力换月与品种切换决策。
+
+核心成果与研究记录
+1. 模型于 2026-10-26 精准触发主力换月信号（AD2701 持仓占比突破 50%），期末 AD2701 持仓份额升至 80.8%。
+2. 对比 Amihud 非流动性指标：AD2612（0.0002）弱于远月 AD2701（0.0001），滑点冲击成本上升。
+3. 基于流动性与成交深度评估，实训中将趋势实盘跟踪标的切换至高流动性的黄金期货 AU2702。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/spread_liquidity_monitor.py
+个人主页：https://github.com/NataliaRostova

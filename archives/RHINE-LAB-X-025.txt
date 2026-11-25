@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-025 / 多变量离散最优解模拟器（在线交互页）
+2D DISCRETE OPTIMIZER UI
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：HTML5 · CSS3 · ES6 Canvas
+档案状态：INTERACTIVE DEMO
+核心指标：零后端纯前端 | 实时热力图 | 局部梯度探测 | 可直接在线体验
+
+零后端依赖的纯前端网页端数值计算器与二维空间最优解模拟器，已直接内嵌至本站 /demo/optimizer.html。支持 6 维参数滑块动态配置、可行域约束边界高亮、全局离散极值自动求解及鼠标实时探测任意坐标点的目标函数值与约束状态。
+
+核心成果与研究记录
+1. 实时遍历全部满足预算约束 c1·x + c2·y <= B 的离散网格点，瞬时定位全局最优组合 (x*, y*) 并输出 Top-5 候选解对比表。
+2. 采用 Viridis 机构配色实时渲染 72×58 二维响应曲面热力图，并叠加红色虚线预算边界与金色最优解星标。
+3. 支持中心有限差分实时计算最优点局部灵敏度梯度 (∂f/∂x, ∂f/∂y) 与预算利用率。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/tree/main/web
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-029 / DeepSeek / Gemini API 财报结构化抽取
+LLM STRUCTURED EXTRACTION
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：python_workflow/llm_pipeline.py
+档案状态：PIPELINE 05 / 08
+核心指标：DeepSeek API | Gemini API | Strict JSON Schema | 零重型 SDK 依赖
+
+使用 Python 标准库原生封装 DeepSeek API（OpenAI 兼容接口）与 Gemini API（Google Generative Language REST），无需重型第三方 SDK，将非结构化券商研报、银行季报快讯与企业公告批量转化为严格 JSON Schema 财务指标表。
+
+核心成果与研究记录
+1. 强制设置 temperature=0.1 与结构化 JSON 输出模式（DeepSeek json_object / Gemini responseMimeType: application/json），大幅降低大模型幻觉与格式漂移。
+2. 精准抽取主体名称、报告期、营收、同比增速、归母净利润、情绪判定、核心催化与风险提示 8 个结构化字段。
+3. 示例管线覆盖华泰证券研报、南京银行三季报快讯与再生铝龙头套保公告，一键生成 outputs/automated_briefing.md。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/blob/main/python_workflow/llm_pipeline.py
+个人主页：https://github.com/NataliaRostova

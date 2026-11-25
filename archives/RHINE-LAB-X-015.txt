@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-015 / AU2702 日内盘口微结构与冲击成本分析
+ORDER BOOK MICROSTRUCTURE
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：src/risk_and_report.py
+档案状态：MODULE 07 / 08
+核心指标：价差 0.92 bps | OBI 均值 0.029 | VWAP 593.07 | 29,407 手/会话
+
+基于 AU2702 日内 1 分钟五档盘口快照（151 根 Bar），计算实时买卖盘口价差（元/克与 bps）、五档盘口失衡度（Order Book Imbalance, OBI）及会话成交量加权均价（VWAP），评估策略在大资金执行中的显性与隐性冲击成本。
+
+核心成果与研究记录
+1. 会话平均买卖盘口价差仅 0.0548 元/克（折合 0.92 bps），显著优于流动性较弱的有色次主力合约。
+2. 五档盘口失衡度 OBI 均值 0.0287、95 分位绝对失衡度 0.589，盘口双边挂单厚度均衡。
+3. 会话成交量 29,407 手、会话 VWAP 为 593.07 元/克，为日内算法拆单（TWAP/VWAP）提供基准参考。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/risk_and_report.py
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-037 / 跨时间（OOT）ROC-AUC 与 KS 分离度验证
+OOT AUC & KS VALIDATION
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：AUC 0.7362 · KS 0.4241
+档案状态：MODULE 05 / 08
+核心指标：OOT AUC 0.7362 | OOT KS 0.4241 | Gini 0.4724 | Top20% 捕获 47.2%
+
+在 Holdout Test 与宏观景气度温和转弱的跨时间 OOT 队列上同步开展模型区分度验证，评估 ROC-AUC、Gini 系数、Kolmogorov-Smirnov（KS）最大分离度及 Top-20% 高风险组违约捕获率。
+
+核心成果与研究记录
+1. Holdout Test ROC-AUC 为 0.7355，跨时间 OOT ROC-AUC 为 0.7362（Gini 0.4724），跨期性能几乎零衰减。
+2. Test KS 为 0.4121，OOT KS 达 0.4241，显著高于银行业风控常用 0.35 优秀分离度基准线。
+3. 在 OOT 样本中，仅锁定模型预警分最低的 Top-20% 授信客群即可捕获 47.2% 的真实违约敞口。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/scorecard_model.py
+个人主页：https://github.com/NataliaRostova

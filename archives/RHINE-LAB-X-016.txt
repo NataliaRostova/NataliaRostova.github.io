@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-016 / 阶段性行情复盘与交易策略评估报告
+PHASE REVIEW REPORT
+
+所属模块：futures-trading-analytics
+项目周期：2026.11
+核心技术：reports/phase_review_report.md
+档案状态：DELIVERABLE 08 / 08
+核心指标：自动 Markdown 报告 | 逐笔交易台账 | JSON 指标导出 | 多策略迭代规划
+
+每次运行全流程后自动编译生成的结构化 Markdown 阶段复盘报告，汇总 AD2612/2701 换月数据、AU2702 盘口统计、宏观因子相关性、完整绩效评估表及逐笔模拟交易明细台账，可直接作为投研周报/实训答辩交付件。
+
+核心成果与研究记录
+1. 报告内嵌 6 笔模拟交易完整台账（开平仓日期、多空方向、手数、价格、净盈亏与退出原因）。
+2. 同步导出 reports/metrics_summary.json 机器可读指标文件，方便下游监控大盘接入。
+3. 提出两项明确迭代路线：夜盘跳空缺口风险压缩系数，以及 AD 跨期均值回归与 AU 趋势多策略低相关性配权。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/reports/phase_review_report.md
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-027 / 多要素离散产出与量化网格参数寻优
+PRODUCTION & GRID SEARCH
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：Nonlinear Tier & Grid Surface
+档案状态：MODEL PRESET 02-03
+核心指标：非凸离散求解 | 阶梯跃迁建模 | 网格参数寻优 | 可扩展求解架构
+
+除资产组合模型外，引擎内置两套非凸/分段离散优化情景：一是含阶梯产能跃迁与失衡惩罚的柯布-道格拉斯多要素产出利润模型；二是量化网格交易“网格间距 × 单格仓位”二维期望净收益寻优曲面。
+
+核心成果与研究记录
+1. 多要素产出模型显式建模了离散档位跃迁奖励（floor(x/12)）与非线性偏离惩罚，常规解析求导难以处理，离散网格搜索可精准锁定全局极值。
+2. 量化网格寻优模型综合权衡行情振幅捕获收益、库存单边风险与手续费磨损。
+3. 全部情景共享统一抽象求解框架，可在几分钟内扩展任意新的二维金融目标函数。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/blob/main/web/optimizer.js
+个人主页：https://github.com/NataliaRostova

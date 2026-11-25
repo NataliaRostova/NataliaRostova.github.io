@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-013 / AU2702 多指标共振趋势策略引擎
+CTA TREND ENGINE
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：EMA(8/21) · Bollinger · RSI(14)
+档案状态：MODULE 05 / 08
+核心指标：年化 +7.10% | 年化波动 5.29% | 盈亏比 2.09 | 含滑点/手续费
+
+在宏观因子过滤基础上，融合快慢指数均线 EMA(8)/EMA(21) 交叉、Bollinger(20, 2σ) 波动率通道与 RSI(14) 动量阈值，完整计入双边手续费（10 元/手）与 2-tick 成交滑点（0.04 元/克），输出逐日盯市（MTM）净值曲线与成交信号点位。
+
+核心成果与研究记录
+1. 多头入场需同时满足 EMA(8) > EMA(21)、RSI(14) > 50 与宏观得分不处于显著逆风区，避免追高与震荡磨损。
+2. 严格计入滑点与手续费后，84 个交易日实现累计收益 +2.31%、年化收益 +7.10%、年化波动率 5.29%。
+3. 策略呈现典型 CTA 趋势跟踪不对称盈亏结构：胜率 33.3%（6 笔交易）但盈亏比达 2.09。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/gold_strategy_engine.py
+个人主页：https://github.com/NataliaRostova

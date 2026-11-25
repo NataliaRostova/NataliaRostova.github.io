@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-023 / XIRR 资金加权与 TWR 时间加权指标体系
+XIRR VS TWR METHODOLOGY
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：SciPy brentq Root Solver
+档案状态：MODULE 07 / 08
+核心指标：SciPy brentq XIRR | TWR 单位净值法 | Sharpe / Sortino | Calmar 比率
+
+严格区分财富管理与基金评价中的两套核心收益口径：采用 SciPy brentq 数值求根精确求解多期现金流内部收益率（XIRR）衡量动态择时价值，同时构建单位净值时间加权收益（TWR）无偏计算组合波动率、夏普与最大回撤。
+
+核心成果与研究记录
+1. 解决了直接对含持续现金流入的账户总市值算回撤或波动率导致指标失真的常见量化误区。
+2. XIRR 精确反映动态加减仓对每一元投入资金的真实年化复利回报，TWR 反映策略底层资产组合风险特征。
+3. 完整输出 11 项机构级绩效指标，适合公募/理财子/券商财富管理投研汇报。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/backtest_engine.py
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-040 / 商业银行信用风控模型验证报告
+RISK MODEL VALIDATION REPORT
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：reports/risk_model_validation_report.md
+档案状态：DELIVERABLE 08 / 08
+核心指标：银行验证规范 | 全指标自动归档 | 3 张验证图表 | 完整开源可复现
+
+参照商业银行内部模型验证规范自动生成的 Markdown 验证报告，完整归档区分度（AUC/KS/Gini）、稳定性（PSI）、IV 特征排序与 IFRS 9 三情景 ECL 压力测试结果表，支持风控/数据岗面试直接复盘展示。
+
+核心成果与研究记录
+1. 同步生成 reports/metrics_summary.json 便于自动化回归测试与 CI 验证。
+2. 清晰阐述了“为何银行信贷风控首选 WOE + 逻辑回归评分卡”的监管合规与业务可解释性依据。
+3. 全部代码、数据与图表均已开源托管于 github.com/NataliaRostova/credit-risk-macro-scorecard。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/reports/risk_model_validation_report.md
+个人主页：https://github.com/NataliaRostova

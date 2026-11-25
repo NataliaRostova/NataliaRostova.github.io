@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-034 / 企业财务比率 WOE 分箱与单调编码引擎
+WOE BINNING ENGINE
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：src/woe_iv_engine.py
+档案状态：MODULE 02 / 08
+核心指标：8 项财务/信用因子 | 严格训练集拟合 | 单调可解释 | 抗异常值编码
+
+实现面向信贷风控的 WoeIvBinner 编码器，对资产负债率、经营现金流/债务、利息保障倍数、授信使用率、流动比率、ROE、营收增速及近 12 个月逾期次数执行等频分箱与证据权重（WOE = ln(Good% / Bad%)）映射。
+
+核心成果与研究记录
+1. WOE 编码天然具备处理缺失值、抑制财务极端离群点及线性化特征与违约对数几率（Log-Odds）关系的三重优势。
+2. 严格仅在训练集上拟合分箱边界与 WOE 映射表，再转换测试集与 OOT 样本，符合银行业模型开发合规要求。
+3. 同步生成各分箱样本量、违约率（Bad Rate %）与 WOE 明细表，保证信贷审批业务强可解释性。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/woe_iv_engine.py
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-009 / 期货系统架构与多频数据管线
+FUTURES DATA PIPELINE
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：src/data_pipeline.py
+档案状态：MODULE 01 / 08
+核心指标：SHFE AD & AU | 日线 + 1m 盘口 | AkShare 接口 | 一键复现
+
+构建上期所期货多频数据接入与校准管线，覆盖铸造铝合金（AD2612/AD2701）日线 OHLCV/持仓量、黄金期货（AU2702）日线及 1 分钟五档盘口快照、美债 10Y TIPS 与美元指数宏观因子；支持 --live 模式对接 AkShare 在线拉取及离线严格按 SHFE 合约乘数与最小变动价位复现。
+
+核心成果与研究记录
+1. 严格对齐上期所合约规范：AD 合约乘数 10 吨/手、最小变动价位 5 元/吨；AU 合约乘数 1000 克/手、最小变动价位 0.02 元/克。
+2. 支持一键运行 run_all.py 完成数据载入、跨期监控、策略回测、图表输出与复盘报告编译。
+3. 内置在线/离线双通道容错机制，确保投研团队在任意环境下均可 100% 复现绩效指标。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/data_pipeline.py
+个人主页：https://github.com/NataliaRostova

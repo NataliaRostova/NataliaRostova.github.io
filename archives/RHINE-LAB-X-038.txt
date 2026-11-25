@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-038 / 群体稳定性指标（PSI）与模型监控
+POPULATION STABILITY (PSI)
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：OOT PSI = 0.0318 (< 0.10)
+档案状态：MODULE 06 / 08
+核心指标：OOT PSI 0.0318 | 稳定阈值 < 0.10 | 10 分位分布比对 | 贷后漂移监控
+
+实现 10 分位群体稳定性指标（PSI = Σ(Actual% - Expected%) × ln(Actual% / Expected%)）计算引擎，监测跨时间 OOT 借款人信用分分布相对开发期是否发生显著客群漂移。
+
+核心成果与研究记录
+1. 实测 OOT 信用分相对训练集 PSI 仅为 0.0318，远低于银行业 0.10 稳定阈值（0.10–0.25 需关注，>0.25 需重训）。
+2. 结合 OOT AUC/KS 无衰减表现，证明模型在轻度宏观波动环境下具备优秀的上线部署稳定性。
+3. 可作为贷后月度/季度自动预警监控指标，触发模型重校准工作流。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/woe_iv_engine.py
+个人主页：https://github.com/NataliaRostova

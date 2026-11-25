@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-035 / 特征信息价值（IV）排序与变量筛选
+INFORMATION VALUE SELECTION
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：IV >= 0.05 Feature Filter
+档案状态：MODULE 03 / 08
+核心指标：负债率 IV 0.453 | 使用率 IV 0.315 | OCF/Debt 0.309 | 优选 7/8 变量
+
+基于信息价值（IV = Σ(Good% - Bad%) × WOE）量化每项企业财务与信用履约指标对 12 个月违约的区分能力，自动剔除弱预测噪声变量（IV < 0.05），防止过拟合并保持评分卡精简稳健。
+
+核心成果与研究记录
+1. 高预测力核心因子（IV > 0.30）：资产负债率（0.4531）、授信使用率（0.3151）、经营现金流/债务（0.3088）。
+2. 中等预测力辅助因子（0.05 <= IV < 0.30）：利息保障倍数（0.1281）、ROE（0.0912）、流动比率（0.0811）、12M 逾期次数（0.0625）。
+3. 自动剔除弱特征营收同比增速（IV=0.0298），保留 7 个稳健变量进入逻辑回归评分卡。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/woe_iv_engine.py
+个人主页：https://github.com/NataliaRostova

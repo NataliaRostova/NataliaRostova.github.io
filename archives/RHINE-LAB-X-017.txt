@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-017 / 近 5 年跨市场指数与 QDII 数据校准引擎
+5Y MARKET & QDII DATA
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：src/qdii_tracker.py
+档案状态：MODULE 01 / 08
+核心指标：5 年 1,304 交易日 | 4 大资产对齐 | yfinance 接口 | 完整宏观周期
+
+构建覆盖 2021-11 至 2026-11 五年周期的跨市场日频对齐面板，涵盖纳斯达克 100（NDX）、标普 500（SPX）、黄金（Gold）、USD/CNY 汇率及南方纳斯达克 100 QDII 净值与二级市场成交价；支持 --live 模式对接 yfinance 实时拉取。
+
+核心成果与研究记录
+1. 完整复现 2022 美联储加息熊市、2023–2024 AI 算力牛市、2025–2026 震荡与黄金避险走强等完整宏观周期。
+2. 采用多元相关随机过程（NDX-SPX 相关性 ~0.92，权益-黄金相关性 ~0.07）与矩匹配校准，保证跨资产协方差结构真实。
+3. 同步构建人民币计价 QDII 净值（扣减 0.85%/年费率与跟踪噪声）及额度紧张期的场内溢价率序列。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/qdii_tracker.py
+个人主页：https://github.com/NataliaRostova

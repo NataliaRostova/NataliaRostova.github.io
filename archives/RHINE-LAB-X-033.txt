@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-033 / 商业银行信用风险评分卡端到端框架
+BANK SCORECARD ARCHITECTURE
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：src/scorecard_model.py
+档案状态：MODULE 01 / 08
+核心指标：5,000 Dev + 1,500 OOT | 三重样本切分 | 零数据泄露 | 银行风控闭环
+
+面向城商行与券商信用风控业务场景，基于 5,000 笔开发样本（违约率 4.14%）与 1,500 笔跨时间样本（OOT 违约率 4.80%），完整搭建企业/小微借款人财务特征 WOE/IV 编码、逻辑回归评分卡、验证监控与 IFRS 9 宏观压力测试闭环。
+
+核心成果与研究记录
+1. 直接衔接《商业银行业务与经营》《财务管理》《计量经济学》课程核心知识点，贴合南京本地城商行/理财子/券商风控岗考察重点。
+2. 严格划分 Train (70%) / Holdout Test (30%) / Out-of-Time (OOT 宏观转弱样本) 三重数据集，杜绝数据泄露。
+3. 单命令 python -m src.scorecard_model 自动产出 3 张验证图表、JSON 汇总指标与银行级模型验证报告。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard
+个人主页：https://github.com/NataliaRostova

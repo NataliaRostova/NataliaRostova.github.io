@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-012 / 黄金期货 AU2702 宏观定价因子拆解
+GOLD MACRO PRICING
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：US 10Y TIPS · DXY · Macro Score
+档案状态：MODULE 04 / 08
+核心指标：Corr(AU,TIPS)=-0.354 | Corr(AU,DXY)=-0.081 | 10D 宏观动量 | 状态过滤
+
+从黄金无息资产属性出发，引入美债 10 年期实际利率（TIPS）与美元指数（DXY）10 日动量构造复合宏观状态得分（Macro Score），实证检验实际利率预期下行与美元走弱对沪金 AU2702 的定价驱动弹性。
+
+核心成果与研究记录
+1. 实测 AU2702 日收益率与美债 10Y TIPS 实际利率日变动相关系数达 -0.354，验证“实际利率主导贵金属定价”的核心逻辑。
+2. AU2702 与美元指数 DXY 日变动呈负相关（-0.081），双因子合成后可有效识别宏观顺风与逆风区间。
+3. 宏观状态过滤器在回测中显著减少了逆势假突破开仓次数。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/gold_strategy_engine.py
+个人主页：https://github.com/NataliaRostova

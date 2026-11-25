@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-024 / 跨资产相关性矩阵与 5 年实证分析报告
+CORRELATION & EMPIRICAL REPORT
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.11
+核心技术：reports/backtest_report.md
+档案状态：DELIVERABLE 08 / 08
+核心指标：Corr(NDX,Gold)=0.07 | 风险收益前沿图 | 自动报告生成 | 3 张高清图表
+
+基于 5 年日频收益率面板绘制 NDX、SPX、Gold 与 USD/CNY 相关性热力图与策略风险-收益前沿散点图，并自动生成包含完整归因与对比表的 Markdown 实证分析报告。
+
+核心成果与研究记录
+1. 相关性矩阵显示：NDX 与 SPX 高度正相关（0.92），而黄金与美股日收益相关性仅 0.07–0.08，具备天然分散化红利。
+2. USD/CNY 汇率与黄金及美股呈温和负相关（-0.15 ~ -0.21），在人民币视角下进一步平滑了组合净值曲线。
+3. 全套可视化与 Markdown 报告通过 python -m src.visualize 一键自动复现。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/reports/backtest_report.md
+个人主页：https://github.com/NataliaRostova

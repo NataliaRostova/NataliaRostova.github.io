@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-004 / 多变量数值计算引擎与 AI 自动化工作流
+MULTIVAR OPT & AI WORKFLOW
+
+所属模块：金融科技与自动化
+项目周期：2026.08 – 2026.11
+核心技术：HTML/JS Canvas · Python · DeepSeek / Gemini
+档案状态：CORE PROJECT 03
+核心指标：纯前端实时求解 | Canvas 热力图 | DeepSeek / Gemini API | 自动去重/缩尾
+
+独立设计并开发前后端解耦的数值优化与投研自动化工具集：前端基于纯 HTML5/JS Canvas 实现多变量离散约束求解与二维响应曲面热力图模拟器（点击下方「交互模拟器 ↗」可立即体验）；后端基于 Python 实现异构金融面板自动去重/行业中位数插补/缩尾质检，并接入 DeepSeek 与 Gemini API 实现非结构化研报公告的严格 JSON Schema 抽取。
+
+核心成果与研究记录
+1. 前端模拟器内置 3 套金融/运筹预设（离散均值-方差效用、多要素产出利润、网格参数二维寻优），支持 6 维滑块实时求解、Top-5 候选排行与局部数值梯度探测。
+2. Python 清洗管线自动完成主键去重、分行业中位数缺失值插补与 [2%, 98%] Winsorization 缩尾，避免单点财务异常值扭曲行业横截面打分。
+3. LLM 工作流原生兼容 DeepSeek 与 Gemini REST 接口，强制低温度与 JSON 输出约束，并内置离线确定性回退解析器保证批处理稳定。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow
+个人主页：https://github.com/NataliaRostova

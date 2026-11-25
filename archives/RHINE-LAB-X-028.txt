@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-028 / Python 异构金融面板自动清洗与缩尾管线
+AUTOMATED DATA CLEANER
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：python_workflow/data_cleaner.py
+档案状态：PIPELINE 04 / 08
+核心指标：自动去重 3 行 | 行业插补 7 处 | 缩尾异常 14 处 | 自动审计报告
+
+针对多行业财务指标面板常见的重复记录、财报披露缺失与一次性损益导致的极端估值异常值，编写自动化 Python 清洗与质检审计脚本，并同步输出行业 PE-ROE 气泡散点图与清洗审计报告。
+
+核心成果与研究记录
+1. 在 63 行含噪多行业样本中，自动剔除 3 行重复记录、通过分行业中位数插补 7 个缺失单元格，并对 14 个极端异常值执行 [2%, 98%] Winsorization 缩尾。
+2. 分行业中位数插补避免了商业银行（低 PE 高杠杆）与半导体（高 PE）之间跨行业量纲错配。
+3. 自动计算标准化多因子复合质量得分（0.45 ROE + 0.35 营收增速 - 0.20 估值），导出 cleaned_financial_panel.csv。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/blob/main/python_workflow/data_cleaner.py
+个人主页：https://github.com/NataliaRostova

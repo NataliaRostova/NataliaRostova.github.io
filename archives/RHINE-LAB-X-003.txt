@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-003 / 个人权益指数配置与 QDII 量化回测
+INDEX & QDII QUANT BACKTEST
+
+所属模块：跨市场资产配置
+项目周期：2026.05 – 至今
+核心技术：Python · Pandas · SciPy XIRR
+档案状态：CORE PROJECT 02
+核心指标：5Y QDII +76.08% | 动态 XIRR 14.41% | 股金 XIRR 14.91% | 夏普 0.67 | 回撤 -23.76%
+
+持续跟踪纳斯达克 100（NDX）、标普 500（SPX）、黄金及代表性 QDII 基金（南方纳斯达克 100 QDII）的净值表现、USD/CNY 汇率波动与场内溢价率，建立三因子收益归因模型；并基于近 5 年（2021–2026）历史行情实证对比定期定额、MA200 均线偏离动态定投（含高溢价分流）与股金多资产配置策略的风险收益表现。
+
+核心成果与研究记录
+1. 5 年南方纳斯达克 100 QDII 人民币净值 +76.08%：底层 NDX 贡献 93.2%（+69.47%）、USD/CNY 汇率贡献 +14.7%（+8.65%）、费率误差 -7.9%。
+2. 场内高溢价风险预警（> +3.0%）触发 304 个交易日（占比 23.3%），验证高溢价分流机制的必要性。
+3. MA200 动态定投将 XIRR 由定期定额的 13.54% 提升至 14.41%（+87 bps）；加入 25% 黄金后波动率由 21.84% 降至 16.16%，最大回撤由 -31.11% 收敛至 -23.76%，夏普升至 0.67。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest
+个人主页：https://github.com/NataliaRostova

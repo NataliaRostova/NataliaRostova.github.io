@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-031 / Yomi 跨语言网页辅助与研报阅读流
+YOMI USERSCRIPT ARCHIVE
+
+所属模块：Yomi (Open Source)
+项目周期：2026.09
+核心技术：JavaScript · Tampermonkey · MIT
+档案状态：OPEN SOURCE 07 / 08
+核心指标：Native JS | 日英双语辅助 | 轻量无依赖 | MIT 开源
+
+自主编写并维护的日英网页阅读辅助 Userscript，帮助在浏览日文金融资讯、日本交易所披露文件与英文技术文档时降低切换词典的心智中断，体现将前端技能应用于日常效率痛点的工程习惯。
+
+核心成果与研究记录
+1. 纯原生 JavaScript 编写，轻量无侵入，兼容主流现代浏览器脚本管理器。
+2. 与个人日语 JLPT N1（118 分）与英语 CET-6（530 分）相结合，提升跨境投研信息获取速度。
+3. 完整开源托管于 github.com/NataliaRostova/Yomi。
+
+项目仓库：https://github.com/NataliaRostova/Yomi
+个人主页：https://github.com/NataliaRostova

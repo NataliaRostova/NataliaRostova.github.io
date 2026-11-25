@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-021 / MA200 均线偏离动态定投（慧定投）实证
+MA200 DYNAMIC DCA
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：0.5x ~ 2.0x Valuation Scaling
+档案状态：MODULE 05 / 08
+核心指标：成本收益 +45.63% | XIRR 14.41% | 超额 +87 bps | 更少本金更高盈利
+
+设计基于 200 日均线偏离度的动态定投倍数函数 mult = clip(1 - 2.8 × deviation, 0.5, 2.0)，在熊市深度低于年线时自动加倍积累廉价筹码、在牛市远高于年线时缩减扣款，并叠加 QDII 高溢价分流保护。
+
+核心成果与研究记录
+1. 5 年累计投入本金 241,466 RMB（较 Fixed DCA 节省约 2.05 万元现金流），期末净盈利 110,171 RMB 反超基准。
+2. 成本收益率由 +39.73% 跃升至 +45.63%（+5.90 个百分点），资金加权 XIRR 提升至 14.41%（+87 bps）。
+3. 验证了“低估加码 + 过热减码 + 避开高溢价”在长期权益定投中的显著资本效率优势。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/backtest_engine.py
+个人主页：https://github.com/NataliaRostova

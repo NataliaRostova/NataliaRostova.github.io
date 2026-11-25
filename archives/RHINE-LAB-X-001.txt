@@ -1,0 +1,20 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-001 / 王浩盛 · 个人投研档案总览
+HAOSHENG WANG · PROFILE
+
+所属模块：个人履历 / 南京本地
+项目周期：2024.09 – 2028.06
+核心技术：南京农业大学（211）· 投资学本科
+档案状态：INTERNSHIP READY
+核心指标：南京农业大学 211 | JLPT N1 (118) | CET-6 (530) | 每周 3–4 天 · 立即到岗
+
+王浩盛，南京农业大学（211）投资学本科 2028 届在读，现居南京（卫岗），每周可到岗 3–4 天、可持续 3 个月以上。求职意向聚焦金融数据分析、金融科技（FinTech）、衍生品与投研支持实习生。本三维档案终端完整收录了我的 4 个核心金融/数据工程项目、1 个跨语言开源工具及学术履历档案，抽取任意玻璃档案卡即可查阅实证图表、代码仓库与交互演示。
+
+核心成果与研究记录
+1. 求职方向：金融数据分析 / 金融科技 / 衍生品与投研支持实习生（南京本地在读，可立即到岗）。
+2. 技术与工具栈：Python（Pandas / NumPy / Matplotlib / SciPy / Scikit-learn）、LLM API（DeepSeek / Gemini）、Excel 建模、HTML/JS、Git。
+3. 跨语言能力：日语 JLPT N1（118 分，可流利阅读日文研报与跨境业务沟通）；英语 CET-6（530 分，无障碍阅读英文财报与文献）。
+4. 联系方式：wang.haosheng.academic@gmail.com | GitHub: github.com/NataliaRostova。
+
+项目仓库：https://github.com/NataliaRostova
+个人主页：https://github.com/NataliaRostova

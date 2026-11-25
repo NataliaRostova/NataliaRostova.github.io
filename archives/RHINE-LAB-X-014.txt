@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-014 / ATR 波动率目标仓位与移动止损风控
+ATR POSITION & STOP RISK
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：14D ATR · 1.2% Risk Budget
+档案状态：MODULE 06 / 08
+核心指标：最大回撤 -2.23% | Calmar 3.18 | 单笔风险 ≤1.2% | 2.0×ATR 止损
+
+针对期货高杠杆特性建立量化风控规则：按 14 日真实波幅（ATR14）动态测算单手波动风险，将单笔交易止损预算严格限定在账户净值的 1.2% 以内，叠加 35% 保证金占用上限、2.0×ATR 追踪移动止损与 -2.5% 日内回撤熔断线。
+
+核心成果与研究记录
+1. 动态手数公式：Lots = min(floor(0.012 × NAV / (2 × ATR14 × 1000)), MaxMarginLots)，高波降仓、低波稳仓。
+2. 2.0×ATR 追踪止损在行情趋势延续时自动上移保护浮盈，在反转时迅速截断尾部亏损。
+3. 全回测期最大回撤仅 -2.23%（低于 -2.5% 熔断阈值），卡玛比率（Calmar）达 3.18，夏普比率 0.97。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/gold_strategy_engine.py
+个人主页：https://github.com/NataliaRostova

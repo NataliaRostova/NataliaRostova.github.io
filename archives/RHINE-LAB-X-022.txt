@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-022 / 股金动态配置组合与风险平价分散效应
+EQUITY + GOLD ALLOCATION
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：50% NDX + 25% SPX + 25% Gold
+档案状态：MODULE 06 / 08
+核心指标：XIRR 14.91% | 夏普 0.67 | 索提诺 1.12 | 回撤 -23.76%
+
+在 MA200 动态定投框架内引入 25% 黄金配置（50% NDX + 25% SPX + 25% 黄金），实证检验低相关性大类资产组合在降低尾部回撤、提升风险调整后收益（夏普/索提诺/卡玛比率）方面的卓越效果。
+
+核心成果与研究记录
+1. 引入 25% 黄金后，组合年化波动率由 21.84% 大幅降至 16.16%，最大回撤由 -31.11% 显著收敛至 -23.76%（减少 7.35 pp 回撤）。
+2. 组合 XIRR 进一步提升至 14.91%，成本收益率达 +47.53%，夏普比率由 0.44 跃升至 0.67（+52%）。
+3. 下行风险控制尤为突出：索提诺比率（Sortino）达 1.12，卡玛比率由 0.37 升至 0.54。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/backtest_engine.py
+个人主页：https://github.com/NataliaRostova

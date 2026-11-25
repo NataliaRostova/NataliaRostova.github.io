@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-018 / 南方纳斯达克 100 QDII 三因子收益归因
+QDII 3-FACTOR ATTRIBUTION
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：Index + FX + Fee/Tracking
+档案状态：MODULE 02 / 08
+核心指标：QDII 净值 +76.08% | NDX 贡献 93.2% | 汇率贡献 +14.7% | 费率拖累 -7.9%
+
+针对国内投资者配置海外权益时常忽略汇率与费率拖累的痛点，在对数收益空间精确拆解人民币计价 QDII 基金净值表现为：底层美元指数涨跌 + USD/CNY 汇率变动 + 管理费与跟踪误差残差。
+
+核心成果与研究记录
+1. 近 5 年南方纳斯达克 100 QDII 人民币净值累计涨幅 +76.08%，显著高于纯美元计价的 NDX 涨幅（+69.47%）。
+2. 三因子对数归因占比：底层 NDX 指数贡献 93.2%，USD/CNY 汇率升值（+8.65%）提供 +14.7% 的正收益安全垫，管理费与跟踪误差合计拖累 -7.9%。
+3. 清晰量化了美元汇率周期对人民币计价海外资产净值波动的缓冲作用。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/qdii_tracker.py
+个人主页：https://github.com/NataliaRostova

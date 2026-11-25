@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-036 / L2 逻辑回归与 PDO=20 标准评分卡刻度
+PDO=20 SCORECARD SCALING
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：Base=600 · Odds=1:15 · PDO=20
+档案状态：MODULE 04 / 08
+核心指标：Base Score = 600 | PDO = 20 | L2 Logistic Reg | 强监管可解释性
+
+在 WOE 特征空间训练 L2 正则化逻辑回归模型估计 12 个月违约概率（PD），并按巴塞尔内部评级法与商业银行通用刻度公式（Score = Offset - Factor × ln(PD/(1-PD))）将对数几率映射为直观信用评分。
+
+核心成果与研究记录
+1. 设定基准分 600 分对应好坏比 15:1，翻倍分 PDO=20（信用分每提高 20 分，违约几率减半），分数越高代表信用资质越优。
+2. 相较黑盒树模型，逻辑回归 + WOE 评分卡满足商业银行授信审批与监管审查对可解释性与单调性的硬性要求。
+3. OOT 评分分布直方图清晰展示好客户（均值偏右）与违约客户（分布左移）的显著分离。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/scorecard_model.py
+个人主页：https://github.com/NataliaRostova

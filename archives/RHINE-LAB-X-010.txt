@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-010 / 铸造铝合金 AD2612/2701 跨期价差监控
+AD CALENDAR SPREAD
+
+所属模块：futures-trading-analytics
+项目周期：2026.10 – 2026.11
+核心技术：src/spread_liquidity_monitor.py
+档案状态：MODULE 02 / 08
+核心指标：均值 42.57 RMB/吨 | 区间 -25~115 | 年化移仓 2.53% | 20D Z-Score
+
+追踪铸造铝合金主力合约 AD2612 与次主力合约 AD2701 的跨期价差结构（Back/Contango 转换），计算 20 日滚动均值、±1.5σ 均值回归通道、滚动 Z-Score 与年化移仓收益，识别库存紧张导致的近月升水扩阔与换月回落窗口。
+
+核心成果与研究记录
+1. 10–11 月观测窗口内 AD2612 - AD2701 价差均值为 42.57 RMB/吨，波动区间 [-25.0, +115.0] RMB/吨。
+2. 年化移仓收益代理均值约 2.53%，在 10 月中旬库存收紧期出现 > +1.5σ 的显著正套信号。
+3. 图表自动标注 ±1.5σ 通道与零轴结构，便于快速判断期限结构强弱。
+
+项目仓库：https://github.com/NataliaRostova/futures-trading-analytics/blob/main/src/spread_liquidity_monitor.py
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-020 / 定期定额（Fixed DCA）基准策略实证
+FIXED DCA BENCHMARK
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：70% NDX QDII + 30% SPX
+档案状态：MODULE 04 / 08
+核心指标：投入 ¥26.2万 | 成本收益 +39.73% | XIRR 13.54% | 最大回撤 -31.11%
+
+建立严格的个人定投基准模型：每 10 个交易日（双周）固定投入 2,000 元人民币（70% 纳斯达克 100 QDII + 30% 标普 500 人民币等价），按实际二级市场成交价（含折溢价）计入份额，追踪 5 年成本均价与净值波动。
+
+核心成果与研究记录
+1. 5 年累计投入本金 262,000 RMB，期末市值 366,087 RMB，累计净盈利 104,087 RMB（成本收益率 +39.73%）。
+2. 资金加权年化收益率（XIRR）为 13.54%，时间加权年化收益（TWR CAGR）为 11.55%。
+3. 纯权益组合风险暴露较高：年化波动率 21.84%，最大回撤深达 -31.11%，夏普比率 0.44。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/backtest_engine.py
+个人主页：https://github.com/NataliaRostova

@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-005 / 商业银行信用风险评分卡与 IFRS 9 压力测试
+CREDIT RISK SCORECARD
+
+所属模块：商业银行风控建模
+项目周期：2026.11
+核心技术：Python · Scikit-learn · WOE/IV · IFRS 9
+档案状态：CORE PROJECT 04
+核心指标：OOT AUC 0.7362 | OOT KS 0.4241 | PSI 0.0318 | 重度压力 ECL ¥7.86亿
+
+紧扣《商业银行业务与经营》《财务管理》《计量经济学》课程与南京本地银行/券商风控与数据岗实务，基于企业/小微财务比率与履约记录构建 WOE/IV 分箱筛选引擎、L2 逻辑回归 PDO=20 标准评分卡，完成跨时间（OOT）AUC/KS/PSI 稳定性验证与 150 亿元模拟贷款组合的 IFRS 9 预期信用损失（ECL = PD×LGD×EAD）宏观压力测试。
+
+核心成果与研究记录
+1. 8 项财务/信用比率中筛出 7 项 IV >= 0.05 有效因子，资产负债率（IV=0.453）、授信使用率（0.315）、经营现金流/债务（0.309）预测力居前。
+2. 跨时间 OOT 验证实现 AUC 0.7362（测试集 0.7355，零过拟合）、KS 0.4241（强风险分离）、PSI 0.0318（<0.10 高度稳定），Top-20% 违约捕获率 47.2%。
+3. 宏观压力测试：基准情景 ECL 3.45 亿元（230 bps）；重度压力情景（+200bps 利率 / -18% 营收）下组合 PD 由 5.06% 升至 9.31%，ECL 增至 7.86 亿元（524 bps）。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard
+个人主页：https://github.com/NataliaRostova

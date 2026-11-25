@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-026 / 金融资产离散仓位均值-方差效用寻优
+DISCRETE PORTFOLIO UTILITY
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：Mean-Variance + Tx Cost
+档案状态：MODEL PRESET 01
+核心指标：最优解 (26, 20) | U* = 2.138 | 风险厌恶 λ 可调 | 相关性 ρ 可调
+
+针对实盘中期货/ETF 必须按整数手数交易且存在交易成本与预算约束的现实场景，构建离散化均值-方差效用最大化模型 U(x,y) = μ_p - (λ/2)σ_p² - c_tx，直观演示风险厌恶系数 λ 与资产相关性 ρ 对最优离散仓位的影响。
+
+核心成果与研究记录
+1. 默认参数（B=100, Δ=2, λ=1.8, ρ=0.25）下全局离散最优解为 (26, 20)，目标效用值 2.138。
+2. 将相关性 ρ 调低至负值可直观观察对冲资产最优配置比例提升及效用前沿外扩。
+3. 适合在量化/财富管理面试现场共享屏幕直观演示马科维茨效用曲面。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/blob/main/web/optimizer.js
+个人主页：https://github.com/NataliaRostova

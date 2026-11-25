@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-039 / IFRS 9 预期信用损失（ECL）宏观压力测试
+IFRS 9 ECL STRESS TESTING
+
+所属模块：credit-risk-macro-scorecard
+项目周期：2026.11
+核心技术：ECL = PD × LGD × EAD
+档案状态：MODULE 07 / 08
+核心指标：EAD ¥150.0亿 | 基准 ECL ¥3.45亿 | 重度 ECL ¥7.86亿 | 2.28× 拨备冲击
+
+针对 150.0 亿元（15,001.5 百万元）模拟对公/小微贷款敞口组合，构造基准、轻度压力（+100bps 利率 / -8% 营收）与重度压力（+200bps 利率 / -18% 营收）三套宏观冲击情景，联动冲击资产负债率、利息保障倍数与现金流覆盖率并重算组合 PD 与 ECL。
+
+核心成果与研究记录
+1. 基准情景（LGD 45%）：组合平均 PD 5.06%，预期信用损失 ECL 344.62 百万元（损失率 229.7 bps）。
+2. 轻度压力情景（LGD 50%）：平均 PD 升至 6.77%，ECL 扩大至 516.60 百万元（344.4 bps）。
+3. 重度压力情景（LGD 55%）：平均 PD 跃升至 9.31%，ECL 达 785.69 百万元（523.7 bps，为基准情景的 2.28 倍），直观量化资本与拨备缓冲需求。
+
+项目仓库：https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/src/scorecard_model.py
+个人主页：https://github.com/NataliaRostova

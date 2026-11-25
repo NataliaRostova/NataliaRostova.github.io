@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-019 / QDII 场内溢价率监控与高溢价分流机制
+QDII PREMIUM GUARD
+
+所属模块：index-qdii-quant-backtest
+项目周期：2026.05 – 至今
+核心技术：Premium Alert (>3.0%) & Rerouting
+档案状态：MODULE 03 / 08
+核心指标：平均溢价 1.92% | 峰值 8.47% | 预警 304 天 (23.3%) | 自动分流 >3.5%
+
+针对 QDII 基金因外汇额度受限频繁出现场内高溢价（追高即面临溢价回落亏损）的实务痛点，建立日常溢价率预警线（+3.0%）与定投自动分流规则（溢价率 > +3.5% 时将 50% 纳指增量切换至低溢价标普 500）。
+
+核心成果与研究记录
+1. 近 5 年观测期内 QDII 平均溢价率 1.92%，额度紧张期峰值溢价高达 8.47%。
+2. 溢价率突破 +3.0% 预警线的交易日累计达 304 天（占全部交易日的 23.3%）。
+3. 实证表明引入高溢价分流机制可有效规避情绪过热期的无效成本损耗。
+
+项目仓库：https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/src/backtest_engine.py
+个人主页：https://github.com/NataliaRostova

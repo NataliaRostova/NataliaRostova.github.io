@@ -1,0 +1,19 @@
+﻿WANG HAOSHENG · QUANT & FINTECH ARCHIVE OS
+FILE X-030 / AI 投研工作流稳定性与离线回退设计
+RESILIENT AI WORKFLOW
+
+所属模块：multivar-opt-ai-workflow
+项目周期：2026.08 – 2026.11
+核心技术：python_workflow/run_pipeline.py
+档案状态：PIPELINE 06 / 08
+核心指标：三级自动降级 | 密钥环境变量隔离 | 数据血缘审计 | 端到端一键运行
+
+遵循金融工程生产化规范，采用环境变量隔离 API 密钥（严禁硬编码凭证），在 DeepSeek → Gemini → 确定性规则解析器之间建立三级自动降级链路，确保批处理流水线在断网或无 Key 评测环境下依旧端到端可执行。
+
+核心成果与研究记录
+1. 通过 os.getenv 读取 DEEPSEEK_API_KEY / GEMINI_API_KEY，天然符合安全与密钥合规规范。
+2. 每条结构化输出均显式标注 provider 来源（deepseek-api / gemini-api / offline-schema-parser），确保数据血缘可审计。
+3. 一条命令 python -m python_workflow.run_pipeline 串联清洗、作图、抽取与简报编译全流程。
+
+项目仓库：https://github.com/NataliaRostova/multivar-opt-ai-workflow/blob/main/python_workflow/run_pipeline.py
+个人主页：https://github.com/NataliaRostova
