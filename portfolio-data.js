@@ -1,0 +1,110 @@
+window.__DEFAULT_PORTFOLIO__ = {
+  "version": 1,
+  "profile": {
+    "name": "王浩盛",
+    "role": "南京农业大学（211）· 投资学本科 2028 届 · 金融数据分析 / 金融科技 / 衍生品与投研支持",
+    "headline": "将金融逻辑构建成\n可验证的系统。",
+    "bio": "南京农业大学（211）投资学本科在读（现居南京卫岗，每周可到岗 3–4 天，可持续 3 个月+）。聚焦期货与衍生品分析、跨市场指数与 QDII 量化回测、商业银行信用风控建模及 Python + LLM 自动化投研工作流。",
+    "about": "本科主修计量经济学、商业银行业务与经营、财务管理、线性代数、期货与衍生品实务与商务英语。习惯以工程化思维验证每一个金融假设——从上期所期货合约跨期价差与盘口微结构，到近 5 年跨市场 QDII 定投回测、商业银行 WOE/IV 信用评分卡与 IFRS 9 压力测试，再到接入 DeepSeek / Gemini API 的财报结构化抽取流水线。\n\n同时具备日语 JLPT N1（118 分，可流利阅读日文研报与跨境资料）与英语 CET-6（530 分）读写能力，并拥有 200+ 课时初高中数理英独立教学交付与 Excel 排课提分台账搭建经验。",
+    "email": "wang.haosheng.academic@gmail.com",
+    "github": "https://github.com/NataliaRostova"
+  },
+  "projects": [
+    {
+      "id": "futures-trading-analytics",
+      "code": "FIN-01",
+      "title": "期货交易系统与贵金属/有色金属合约跟踪",
+      "category": "衍生品与量化",
+      "year": "2026.10–11",
+      "summary": "上期所铸造铝合金（AD2612/2701）跨期价差与流动性移仓监控；黄金期货（AU2702）宏观利率因子+技术面趋势策略与盘口微结构复盘。",
+      "description": "围绕大宗商品期货交易系统搭建，完整实现“品种筛选 → 跨期价差与移仓监控 → 宏观/技术面定价拆解 → 波动率仓位与止损风控 → 阶段性复盘报告自动输出”的端到端研究框架。\n\n1. 铸造铝合金（AD2612 / AD2701）：追踪跨期价差（10–11 月均值 42.57 RMB/吨）、20 日滚动 Z-Score 均值回归区间与 Amihud 非流动性代理指标，基于持仓量份额精准识别 2026-10-26 为主力移仓拐点。\n2. 黄金期货（AU2702）：引入美债 10 年期 TIPS 实际利率与美元指数（DXY）10 日动量过滤器（AU 与 TIPS 日变动相关性 -0.354），叠加 EMA(8)/EMA(21)、布林带与 RSI(14) 趋势信号；执行 14 日 ATR 波动率目标仓位（单笔风险 ≤ 1.2% 净值）与 2.0×ATR 移动止损。\n3. 策略实测与盘口监控：84 个交易日年化收益 +7.10%、夏普比率 0.97、最大回撤 -2.23%（严控在 -2.5% 熔断线内）、盈亏比 2.09；日内 1 分钟盘口平均买卖价差仅 0.92 bps，验证高流动性执行优势。",
+      "tags": "Python, Pandas, SHFE 期货, CTA 策略, ATR 风控, 盘口微结构",
+      "metrics": ["年化 +7.10%", "夏普 0.97", "最大回撤 -2.23%", "盈亏比 2.09", "盘口价差 0.92 bps"],
+      "image": "assets/ad_spread_liquidity.png",
+      "gallery": [
+        { "src": "assets/ad_spread_liquidity.png", "caption": "FIG 01-A · AD2612/2701 跨期价差、主力移仓拐点与成交量比值" },
+        { "src": "assets/au2702_kline_signals.png", "caption": "FIG 01-B · AU2702 趋势买卖信号与美债 10Y TIPS 实际利率逆向驱动" },
+        { "src": "assets/strategy_equity_drawdown.png", "caption": "FIG 01-C · AU2702 宏观-技术策略净值曲线与回撤熔断控制" }
+      ],
+      "url": "https://github.com/NataliaRostova/futures-trading-analytics/blob/main/reports/phase_review_report.md",
+      "source": "https://github.com/NataliaRostova/futures-trading-analytics",
+      "featured": true
+    },
+    {
+      "id": "index-qdii-quant-backtest",
+      "code": "FIN-02",
+      "title": "个人权益指数资产配置与 QDII 量化回测",
+      "category": "衍生品与量化",
+      "year": "2026.05–至今",
+      "summary": "纳斯达克 100 / 标普 500 / 黄金及南方纳斯达克 100 QDII 净值-汇率-溢价率三因子归因，与近 5 年定期定额 vs 均线偏离动态定投实证。",
+      "description": "面向跨市场权益与财富管理资产配置场景，构建 QDII 组合净值归因台账与近 5 年（2021–2026）多策略量化定投回测引擎。\n\n1. QDII 三因子归因与高溢价预警：拆解人民币计价南方纳斯达克 100 QDII 净值 5 年累计涨幅（+76.08%）为底层 NDX 指数涨幅（+69.47%，贡献 93.2%）+ USD/CNY 汇率升值（+8.65%，贡献 +14.7%）- 费率与跟踪误差（-7.9%）；监测场内溢价率 > +3.0% 预警日达 304 天（占比 23.3%）。\n2. 定投策略实证对比：\n   • 定期定额（70% NDX + 30% SPX）：资金加权年化 XIRR 13.54%，年化波动率 21.84%，最大回撤 -31.11%，夏普 0.44。\n   • MA200 均线偏离动态定投 + 高溢价分流：在更少累计投入下将 XIRR 提升至 14.41%（+87 bps），成本收益率提升近 5.9 个百分点。\n   • 股金动态配置（50% NDX + 25% SPX + 25% 黄金）：利用黄金与美股低相关性将波动率压缩至 16.16%，最大回撤收敛至 -23.76%，XIRR 达 14.91%，夏普跃升至 0.67、索提诺 1.12。",
+      "tags": "Python, Pandas, SciPy XIRR, QDII 溢价监控, 动态定投, 资产配置",
+      "metrics": ["5Y QDII +76.08%", "动态定投 XIRR 14.41%", "股金 XIRR 14.91%", "夏普 0.67", "回撤 -23.76%"],
+      "image": "assets/dca_vs_dynamic_equity.png",
+      "gallery": [
+        { "src": "assets/dca_vs_dynamic_equity.png", "caption": "FIG 02-A · 近 5 年定期定额 vs MA200 动态定投 vs 股金动态配置净值与回撤" },
+        { "src": "assets/qdii_attribution_premium.png", "caption": "FIG 02-B · QDII 净值三因子归因（指数+汇率）与场内高溢价预警线" },
+        { "src": "assets/risk_return_frontier.png", "caption": "FIG 02-C · 策略风险-收益前沿（XIRR vs 波动率）与资产相关性矩阵" }
+      ],
+      "url": "https://github.com/NataliaRostova/index-qdii-quant-backtest/blob/main/reports/backtest_report.md",
+      "source": "https://github.com/NataliaRostova/index-qdii-quant-backtest",
+      "featured": true
+    },
+    {
+      "id": "multivar-opt-ai-workflow",
+      "code": "FIN-03",
+      "title": "多变量数值计算引擎与 AI 自动化工作流",
+      "category": "金融科技工具",
+      "year": "2026.08–11",
+      "summary": "纯前端 HTML/JS Canvas 交互式二维离散最优解模拟器（支持直接在线体验），结合 Python 金融数据清洗与 DeepSeek / Gemini API 结构化研报抽取。",
+      "description": "面向金融工程数值寻优与投研数据处理自动化需求，独立构建前后端分离的轻量级工具集。\n\n1. 前端多变量数值计算器与二维最优解模拟器（可点击下方「体验项目」直接打开交互界面）：零后端依赖，内置“离散资产组合效用最大化（均值-方差-交易成本）”、“多要素离散产出与边际利润寻优”、“量化网格交易参数二维寻优”三套模型；支持 6 维参数滑块实时调参、Canvas 二维响应曲面热力图、可行域边界绘制、Top-5 候选解排序与局部数值梯度探测。\n2. Python 数据自动清洗与可视化管线：面向多行业异构财务面板，自动执行主键去重、行业中位数缺失值插补、[2%, 98%] 异常值缩尾（Winsorization）与标准化质量打分。\n3. DeepSeek / Gemini API 结构化信息工作流：以低温度 + 严格 JSON Schema 模式批量抽取券商研报、银行季报快讯与企业公告中的关键财务指标、催化因子与风险提示，并内置离线确定性回退模式保障批处理稳定性。",
+      "tags": "HTML5/JS Canvas, Python, DeepSeek API, Gemini API, 离散优化, 数据清洗",
+      "metrics": ["纯前端实时求解", "3 套金融优化情景", "DeepSeek / Gemini API", "自动去重/缩尾"],
+      "image": "assets/workflow_summary_chart.png",
+      "gallery": [
+        { "src": "assets/workflow_summary_chart.png", "caption": "FIG 03-A · 二维约束效用响应曲面与清洗后多行业估值-ROE 面板" }
+      ],
+      "url": "demo/optimizer.html",
+      "source": "https://github.com/NataliaRostova/multivar-opt-ai-workflow",
+      "featured": true
+    },
+    {
+      "id": "credit-risk-macro-scorecard",
+      "code": "FIN-04",
+      "title": "商业银行信用风险评分卡与 IFRS 9 压力测试",
+      "category": "银行风控建模",
+      "year": "2026.11",
+      "summary": "结合商业银行业务与财务管理实践，实现企业/小微授信 WOE/IV 特征工程、PDO=20 标准评分卡、跨时间 OOT 验证与 IFRS 9 预期信用损失压力测试。",
+      "description": "紧扣本科《商业银行业务与经营》《财务管理》《计量经济学》课程与商业银行/券商风险管理实务，构建端到端信用风险量化验证系统。\n\n1. WOE/IV 特征工程：围绕资产负债率（IV=0.453）、授信使用率（0.315）、经营现金流/债务（0.309）、利息保障倍数（0.128）、ROE、流动比率与近 12 个月逾期次数 8 项指标，执行分箱、WOE 编码与 IV>=0.05 特征筛选。\n2. 标准逻辑回归评分卡与跨时间（OOT）验证：按银行业通用刻度（Base=600, Odds=1:15, PDO=20）将违约概率映射为信用分；Holdout Test AUC 0.7355 / KS 0.4121，跨时间 OOT 验证集 AUC 0.7362 / KS 0.4241 / Gini 0.4724 / PSI 0.0318（<0.10 高度稳定，无过拟合），Top-20% 高风险组违约捕获率 47.2%。\n3. IFRS 9 宏观压力测试（ECL = PD × LGD × EAD）：针对 150 亿元模拟贷款组合，基准情景 ECL 3.45 亿元（230 bps）；重度压力情景（+200bps 利率 / -18% 营收）下组合平均 PD 由 5.06% 升至 9.31%，ECL 增至 7.86 亿元（524 bps）。",
+      "tags": "Python, Scikit-learn, WOE/IV, 信用评分卡, KS/PSI 验证, IFRS 9 ECL",
+      "metrics": ["OOT AUC 0.7362", "OOT KS 0.4241", "PSI 0.0318", "重度压力 ECL ¥7.86亿"],
+      "image": "assets/score_distribution_ecl.png",
+      "gallery": [
+        { "src": "assets/score_distribution_ecl.png", "caption": "FIG 04-A · OOT 违约/非违约评分分布与 IFRS 9 宏观压力测试 ECL 柱状图" },
+        { "src": "assets/roc_ks_curve.png", "caption": "FIG 04-B · Holdout Test vs Out-of-Time ROC 曲线与 KS 分离度曲线" },
+        { "src": "assets/iv_feature_importance.png", "caption": "FIG 04-C · 财务与信用特征信息价值（IV）筛选排序" }
+      ],
+      "url": "https://github.com/NataliaRostova/credit-risk-macro-scorecard/blob/main/reports/risk_model_validation_report.md",
+      "source": "https://github.com/NataliaRostova/credit-risk-macro-scorecard",
+      "featured": true
+    },
+    {
+      "id": "yomi-bilingual-reader",
+      "code": "DEV-05",
+      "title": "Yomi · 日英双语网页阅读辅助脚本",
+      "category": "前端与跨语言工具",
+      "year": "2026.09",
+      "summary": "面向日文与英文网页、外文研报及技术文档的轻量级浏览器 Userscript 阅读辅助工具，结合 JLPT N1 / CET-6 跨语言工作流。",
+      "description": "个人开源维护的浏览器端 JavaScript 用户脚本（MIT 协议），用于提升阅读日文金融研报、日本券商/宏观资讯及英文技术文档时的查词与排版浏览效率。\n\n体现扎实的原生 JavaScript DOM 操作与跨语言信息处理能力，与简历中的日语 JLPT N1（118 分）和英语 CET-6（530 分）形成互补。",
+      "tags": "JavaScript, Userscript, 日语 JLPT N1, 英文研报阅读, MIT",
+      "metrics": ["JavaScript", "JLPT N1 (118)", "CET-6 (530)", "MIT Open Source"],
+      "image": "assets/archive-cover.jpg",
+      "gallery": [
+        { "src": "assets/archive-cover.jpg", "caption": "FIG 05-A · Yomi 日英双语网页阅读辅助工具档案" }
+      ],
+      "url": "https://github.com/NataliaRostova/Yomi",
+      "source": "https://github.com/NataliaRostova/Yomi",
+      "featured": false
+    }
+  ]
+};
